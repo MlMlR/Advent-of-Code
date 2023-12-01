@@ -1,8 +1,18 @@
-file_path = 'input\\2023\\01.txt'
+file_path = 'src\\y23\\input\\day_01.txt'
 with open(file_path, 'r') as file:
     data = [line.strip() for line in file.readlines()]
 
 def part1(d):
+    """
+    Sums the first and last digits from each line of the input data.
+    Lines without digits will contribute 0 to the sum.
+
+    Parameters:
+    - data (str): A multiline string with each line potentially containing digits.
+
+    Returns:
+    - int: The total sum of the calibration values.
+    """
     print(sum(int(x[0] + x[-1]) for l in d if l for x in ([c for c in l if c.isdigit()],)))
 
 part1(data)
