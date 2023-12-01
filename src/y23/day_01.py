@@ -1,4 +1,4 @@
-file_path = 'src\\y23\\input\\day_01.txt'
+file_path = '.\\src\\y23\\input\\day_01.txt'
 with open(file_path, 'r') as file:
     data = [line.strip() for line in file.readlines()]
 
