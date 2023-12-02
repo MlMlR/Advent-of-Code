@@ -23,14 +23,13 @@ def part1(d):
             elif color == "blue" and int(number) > 14:
                 fail = True
         if not fail:
-            print(game)
             sum += i+1
         fail = False
 
-    print(sum)
+    return sum
 
-print(test_data)
-part1(data)
+print(part1(test_data))
+
 
 def part2(d):
     sum = 0
@@ -50,7 +49,7 @@ def part2(d):
         sum += r*g*b
         r, g, b = 0, 0, 0 
 
-    print(sum)
+    return sum
 
-print(test_data)
-part2(data)
+print(part2(test_data))
+
