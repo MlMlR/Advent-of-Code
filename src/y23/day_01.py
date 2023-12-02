@@ -2,6 +2,7 @@ file_path = '.\\src\\y23\\input\\day_01.txt'
 with open(file_path, 'r') as file:
     data = [line.strip() for line in file.readlines()]
 
+
 def part1(d):
     """
     Sums the first and last digits from each line of the input data.
