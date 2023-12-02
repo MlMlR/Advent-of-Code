@@ -13,9 +13,9 @@ def part1(d):
     Returns:
     - int: The total sum of the calibration values.
     """
-    print(sum(int(x[0] + x[-1]) for l in d if l for x in ([c for c in l if c.isdigit()],)))
+    return sum(int(x[0] + x[-1]) for l in d if l for x in ([c for c in l if c.isdigit()],))
 
-part1(data)
+print(part1(data))
 
 def part2(d):
     z = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
@@ -31,6 +31,6 @@ def part2(d):
         if dg:
             x = int(dg[0] + dg[-1])
             S += x
-    print(S)
+    return S
 
-part2(data)
+print(part2(data))
