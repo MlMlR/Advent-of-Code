@@ -2,7 +2,7 @@ file_path = '.\\src\\y23\\input\\day_09.txt'
 with open(file_path, 'r') as file:
     data = [list(map(int, line.split())) for line in file.readlines()]
 
-file_path = 'src\\y23\\input\\test.txt'
+file_path = '.\\src\\y23\\input\\test.txt'
 with open(file_path, 'r') as file:
     test_data = [list(map(int, line.split())) for line in file.readlines()]
 
