@@ -4,16 +4,6 @@ with open(file_path, 'r') as file:
 
 
 def part1(d):
-    """
-    Sums the first and last digits from each line of the input data.
-    Lines without digits will contribute 0 to the sum.
-
-    Parameters:
-    - data (str): A multiline string with each line potentially containing digits.
-
-    Returns:
-    - int: The total sum of the calibration values.
-    """
     return sum(int(x[0] + x[-1]) for l in d if l for x in ([c for c in l if c.isdigit()],))
 
 print(part1(data))
